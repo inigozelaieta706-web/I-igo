@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head class="fondo">
+    <link rel="website icon" type="jpg" href="logo.jpg"/>
+    <title>Formulario cita previa</title>
+    <style>
+        #titulo {
+            color:rgb(22, 31, 22)
+        }
+        #volver {
+            font-size: 24px;
+            border: 5px white groove;
+        }
+        .fondo {
+            background-color:#73bf4a;
+        }
+        .tamaño{
+            font-size: 20px
+        }  
+        #boton{
+            border: 5px white ridge;
+            padding:10px
+        }
+        #enviar{
+            font-size: 20px
+        }
+        #formularioo{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            gap:200px
+        }
+        #imagenpg{
+                width:300px;
+                height:auto;
+        }
+    </style>
+</head>
+<body class="fondo" >
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="WrhuIDXK3q9DRu2gDFJUY";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="envio.js"></script>
+    <header>
+    <h1 id="titulo">Solicite cita previa:</h1>
+    </header>
+    <br>
+    <section id="formularioo">
+        <div id="imagenpg">
+            <img src="perroygato.jpg"/>
+        </div>
+    <form action="/formulario" method="post" action="" style="text-align: center;" id="formulario">
+      
+        <label for="nombre" class="tamaño">Nombre:</label>
+        <input class="tamaño" name="nombre" placeholder="Nombre" />
+        <br><br>
+        <Label for="apellido" class="tamaño">Apellido:</Label>
+         <input class="tamaño" name="apellido" placeholder="Apellido" />
+         <br><br>
+         <label for="gmail" class="tamaño">Gmail:   </label>
+        <input class="tamaño" name="gmail" placeholder="Gmail" />
+        <br><br>
+        <Label for="telefono" class="tamaño">Telefono:</Label>
+        <input class="tamaño" name="telefono" placeholder="Telefono"/>
+        <br><br><br>
+        <label for="mensaje" class="tamaño">Ingrese su mensaje:</label>
+        <br><br>
+        <textarea rows="10" cols="50"  id="mensaje" name="mensaje" placeholder="Mensaje" class="tamaño"></textarea>
+        <br><br>
+        
+            <button type="submit" id="boton">ENVIAR</button>
+        <br><br>
+         <a href="https://www.cvsanbernardo.es/" id="volver" style="text-align: center;">VOLVER A PAGINA PRINCIPAL</a>
+    </form>
+    </section>
+    <br>
+</body>
+</html>
